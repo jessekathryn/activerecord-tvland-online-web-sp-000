@@ -13,6 +13,6 @@ class Actor < ActiveRecord::Base
   def list_roles
     self.shows.characters
   end
-
+end
 
  
