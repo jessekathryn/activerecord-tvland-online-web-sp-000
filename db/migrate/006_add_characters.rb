@@ -1,5 +1,9 @@
-class AddCharactersCatchphrase < ActiveRecord::Migration[5.1]
+class CreateCharacters < ActiveRecord::Migration[5.1]
   def change
-   add_column :catchphrase
+    create_table :characters do |t|
+      t.string :name
+      t.string :actor_id
+      t.string :show_id
+    end
   end
 end
