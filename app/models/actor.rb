@@ -6,8 +6,8 @@ class Actor < ActiveRecord::Base
     self.first_name.last_name
   end
   
-  def shows_and_characters
-    self.shows.characters
+  def list_rolls
+    self.characters.shows
   end
 end
 
