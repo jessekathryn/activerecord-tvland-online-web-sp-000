@@ -1,1 +1,1 @@
-class AddCharacters
+class AddCharacters <
