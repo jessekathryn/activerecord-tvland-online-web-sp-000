@@ -1,3 +1,3 @@
 class CreateActors < ActiveRecord::Migration[5.1]
   def change
-    create_table
+    create_table :actors 
