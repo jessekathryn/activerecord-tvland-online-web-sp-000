@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
     characters.collect do |s|
     "#{s.show} - #{s.show}" 
   end
-end 
+ end 
 end
 
  
