@@ -7,12 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    peter = Actor.new(:first_name => "Peter", :last_name => 
-    "Drinklage") 
-    tyrion = Character.new(:name => "Tyrion Lannister")
-    tyrion.actor = peter 
-    thrones = Show.new(:name => "Game of Thrones")
-    tyrion.show = thrones
+    "#{self.show} - #{self.show}" 
   end
 end
 
