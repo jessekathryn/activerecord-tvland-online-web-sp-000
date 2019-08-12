@@ -4,7 +4,8 @@ class Actor < ActiveRecord::Base
   
   def full_name
     self.characters.collect do |t|
-     t.first_name 
+     Actors << t.first_name 
+     Actors << t.last_name
     end
   end
 
