@@ -6,9 +6,7 @@ class Character < ActiveRecord::Base
    "#{self.name} always says: #{self.catchphrase}"
  end 
  
- def chain
+ def build_show
    build_show = Actor.find_or_create_by(name: 'Firefly')
-   build_network = Shows.find_of_create_by(:call_letters)
-   
  end
 end
