@@ -13,7 +13,6 @@ class Actor < ActiveRecord::Base
     tyrion.actor = peter 
     thrones = Show.new(:name => "Game of Thrones")
     tyrion.show = thrones
-    tyrion.save
   end
 end
 
