@@ -3,15 +3,13 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
   
   def full_name
-    self.characters.collect do |t|
-     Actors << t.first_name 
-     Actors << t.last_name
+     "#{self.first_name} #{self.first_name}"
     end
   end
 
 
   def list_roles
-    self.shows
+    "#{character.name} - #{shows.name}"
   end
 end
 
