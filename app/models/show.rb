@@ -1,6 +1,6 @@
 class Show < ActiveRecord::Base
   has_many :characters
-  belongs_to :networks
+  belongs_to :network
   has_many :actors, through: :characters
 
   def actors_list
@@ -8,4 +8,6 @@ class Show < ActiveRecord::Base
     "#{a.first_name} #{a.last_name}"
   end
  end
+ 
+  #def build_
 end
