@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
 
   def actors_list
-    shows.collect do |a|
+    self.collect do |a|
     "#{a.first_name} #{a.last_name}"
   end
  end
