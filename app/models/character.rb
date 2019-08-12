@@ -9,5 +9,5 @@ class Character < ActiveRecord::Base
  #def build_show(name)
    #show = Actor.find_or_create_by(:name)
    #show.name
- end
+ #end
 end
