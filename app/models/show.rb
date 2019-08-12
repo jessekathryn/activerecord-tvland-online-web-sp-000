@@ -6,4 +6,5 @@ class Show < ActiveRecord::Base
     shows.collect do |a|
     "#{a.first_name} #{a.last_name}"
   end
+ end
 end
